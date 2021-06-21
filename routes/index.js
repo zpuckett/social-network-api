@@ -21,7 +21,7 @@ router.delete('/api/users/:id', deleteUser);
 
 // userId/friends/:friendId
 router.post('api/users/:id/friends/', addFriend);
-router.delete('api/users/:d/friends/', deleteFriend);   
+router.delete('api/users/:id/friends/', deleteFriend);   
 
 // const for Thought routes
 const {
@@ -39,7 +39,7 @@ router.get('/api/thoughts', getAllThoughts);
 router.post('/api/thoughts', createThought);
 
 // /api/thoughts/:thoughtId GET,PUT,DELETE
-router.get('/api/thoughts/:idd', getThoughtById);
+router.get('/api/thoughts/:id', getThoughtById);
 router.put('/api/thoughts/:id', updateThought);
 router.delete('/api/thoughts/:id', deleteThought);   
 
