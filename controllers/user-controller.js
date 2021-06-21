@@ -1,4 +1,4 @@
-const { User, Thought } = require('../models');
+const { User } = require('../models');
 
 const UserController = {
     // GET /api/users
@@ -96,7 +96,7 @@ const UserController = {
     addFriend({ params }, res) {
         // add friendId to userId's friend list
         User.findOneAndUpdate(
-            { _id: params.userId },
+            { _id: params.userid },
             { $addToSet: { friends: params.friendId } },
             { new: true, runValidators: true }
         )
@@ -156,4 +156,4 @@ const UserController = {
     }
 }
 
-module.exports = userController;
+module.exports = UserController;
