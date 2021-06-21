@@ -4,7 +4,7 @@
 A REST API for a social media app. Built with Express, Mongoose, and MongoDB.
 
 ## Walkthrough
-[!Walkthrough](https://youtu.be/Ffl6UKEA9Vk)
+[https://youtu.be/Ffl6UKEA9Vk]
 
 ## Usage
 1. Make sure you have MongoDB installed on your machine (if you don't, follow the instructions on the [MongoDB Website](https://docs.mongodb.com/manual/installation/))
